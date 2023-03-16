@@ -13,10 +13,10 @@ thirdparty="yes"
 
 [ "$(caller)" != "0 NULL" ] && return 0
 
-if [ "${PRODUCT_VERSION}" = "7.0" ]; then
-    os_min_ver="7.0-40000"
+if [ "${PRODUCT_VERSION}" = "7.2" ]; then
+    os_min_ver="7.2-64216"
     RUN_AS="package"
-    INSTRUCTION=' [DSM7 note] If this is the first time you are installing this driver, special steps are required. See the readme for details.'
+    INSTRUCTION=' [DSM7.2 note] If this is the first time you are installing this driver, special steps are required. See the readme for details.'
 else
     RUN_AS="root"
 fi
